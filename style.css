@@ -1,0 +1,203 @@
+/* #818C2A , #52591C, #8C4318 , #261A1A, #F2E7AC, #F2EFDC*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form, button{
+  font-size: inherit;
+  font-family: inherit;
+}
+body {
+  background-color: #f2efdc;
+  color: #261a1a;
+  font-family: "Mali", cursive;
+  position: relative;
+}
+
+header {
+  background: url("./images/jimmysdiner.png");
+  background-size: cover;
+  color: #f2efdc;
+  padding: 4em 3em;
+}
+section {
+  padding: 4em 3em;
+  align-items: center;
+  font-weight: 400;
+  border-bottom: 1px solid #d1d5db;
+}
+form {
+  text-align: center;
+  width: 80%;
+}
+input {
+  display: block;
+  margin-bottom: 1em;
+  min-width: 100%;
+  min-height: 25%;
+  padding: 0.5em 1em;
+  border: 1px solid #8c4318;
+  color: #8c4318;
+}
+footer {
+  padding: 1em 3em;
+  /* margin-top: 0; */
+}
+button{
+    font-family:"Mali", cursive; 
+}
+button:hover, 
+button:focus{
+    opacity:65%;
+}
+::placeholder {
+  color: #8c4318;
+}
+ 
+.container {
+  /* max-width: 800px; */
+  padding: 3em;
+  width: 90%;
+  margin: 0 auto;
+}
+.col {
+  flex-direction: column;
+}
+.row {
+  display: flex;
+}
+.food-icons {
+  width: 70%;
+  
+}
+.item-description-price p {
+  color: #6b7280;
+  margin: 0.4em 0;
+}
+.add-btn-div {
+  margin-left: auto;
+  text-align: center;
+}
+.add {
+  margin-left: auto;
+  border-radius: 50%;
+  background-color: #f2efdc;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  width: 50px;
+  max-height: 50px;
+}
+.payment-details {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.2);
+
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* padding: 3em 1em; */
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f2efdc;
+  max-height: 30%;
+}
+.payment-details h3 {
+  margin: 0 2em 2em 0;
+  color: #8c4318;
+}
+.pay-btn {
+  display: inline-block;
+  width: 100%;
+  margin: 1em auto 2em auto;
+  min-height: 25%;
+  background-color: #8c4318;
+  border: none;
+  color: #f2efdc;
+  font-size: 1.2rem;
+}
+.thanks {
+  text-align: center;
+  background-color: #8c4318;
+  padding: 1em;
+  color: #f2efdc;
+  border-radius: 3px;
+}
+.your-order{
+gap:1em;
+text-align: center;
+margin-top: .5em;
+padding:0 1em;
+
+}
+.your-order h3{
+  margin-bottom: 3em;
+}
+.ordered-item{
+    justify-content: flex-start;
+    gap:1em;
+   
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+
+
+}
+
+.price{
+    margin-left:auto;
+}
+.remove{
+    border:none;
+    background-color:#f2efdc ;
+    color: #6b7280;
+}
+.remove:hover, 
+.remove:focus{
+color:#261A1A;
+}
+.hidden {
+
+  visibility: hidden;
+  display: none;
+}
+.total-price{
+  border-top: 1px solid #261A1A;
+  padding-top: 2em;
+}
+.complete-order{
+  display: block;
+  width: 100%;
+ margin: 3em auto;
+ padding:1em 2em;
+ border:none;
+ border-radius: 3px;
+ background-color: #8c4318;
+ color:#f2efdc;
+ 
+
+
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 12px;
+  }
+  .food-icons {
+    width: 60%;
+  }
+  .container {
+    width: 100%;
+    padding: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 26px;
+  }}

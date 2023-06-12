@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jimmy's Diner</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header >
+      <div class="container">
+        <h1>Jimmy's Diner</h1>
+      <h4>The best burgers and pizzas in town</h4>
+      </div>
+      
+    </header>
+    <main class="container">
+      <section class="row foods">
+
+        <!-- pizza -->
+
+      
+        <food-icons-div>
+          <img
+            class="food-icons"
+            src="images/pizza-slice-icon.png"
+            alt="pizza slice icon"
+          />
+        </food-icons-div>
+        <div class="item-description-price col">
+          <h3>Pizza</h3>
+          <p>pepperoni, mushrooms, mozarella</p>
+          <h4 >$14</h4>
+        </div>
+        <div class="add-btn-div"><button id ="pizza" 
+          data-cost = 14 class="add">+</button></div>
+      </section>
+      <section class="row">
+        <food-icons-div>
+          <img
+            class="food-icons"
+            src="images/hamburger-icon.png"
+            alt="hamburger icon"
+          />
+        </food-icons-div>
+
+        <!-- hamburger -->
+         
+        <div class="item-description-price">
+          <h3>Hamburger</h3>
+          <p>beef, cheese, lettuce</p>
+          <h4 class ="cost">$12</h4>
+        </div>
+        <div class="add-btn-div"><button  
+          id = "hamburger" class="add"  data-cost = 12 >+</button></div>
+      </section>
+
+      <!-- beer -->
+
+      <section class="row">
+        <food-icons-div>
+          <img class="food-icons" src="images/beericon.png" alt="beer icon" />
+        </food-icons-div>
+
+        <div class="item-description-price">
+          <h3>Beer</h3>
+          <p>grain, hops, yeast, water</p>
+          <h4 class ="cost">$12</h4>
+        </div>
+        <div class="add-btn-div"><button class="add" id ="beer"  data-cost = 12 >+</button></div>
+      </section>
+     </main>
+
+    <!-- Payment details -->
+
+      <div class="payment-details row col hidden">
+        <h3>Enter card details</h3>
+        <form >
+          <input id ="name" type="text" placeholder="Enter your name" required />
+          <input type="text" placeholder="Enter card number" required />
+          <input type="text" placeholder="Enter CVV" required />
+          <button class="pay-btn">Pay</button>
+        </form>
+      </div>
+
+
+      <!-- order summary 
+      -->
+    <footer> 
+       <div class="your-order hidden row col">
+            <h3>Your Order</h3>
+            <!-- ordered item -->
+            <div class=" items col"></div>
+      
+         <div class="total-price hidden"> 
+
+
+          <!-- <h3 >Total price</h3>
+          <h4>$26</h4>  -->
+       
+        </div>
+        <button class="complete-order hidden" onclick="enterCardDetails()">Complete order
+
+        </button> 
+      </div>
+        <div class="container thanks hidden">
+         
+        </div>
+    </footer> 
+ 
+    <script defer src="script.js"></script>
+  </body>
+</html>
