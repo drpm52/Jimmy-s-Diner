@@ -70,27 +70,36 @@ button:focus{
 .row {
   display: flex;
 }
+.food-icons-div{
+  justify-content: space-between;
+}
 .food-icons {
   width: 70%;
   
 }
+
 .item-description-price p {
   color: #6b7280;
   margin: 0.4em 0;
 }
 .add-btn-div {
   margin-left: auto;
-  text-align: center;
+ 
+  /* text-align: center; */
 }
+
 .add {
   margin-left: auto;
   border-radius: 50%;
   background-color: #f2efdc;
-  padding: 16px;
-  font-size: 16px;
+  padding: 1em;
+  font-size: 1rem;
   border: 1px solid #d1d5db;
-  width: 50px;
-  max-height: 50px;
+  width: 3.125rem;
+  max-height: 3.125rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .payment-details {
   position: absolute;
@@ -185,19 +194,25 @@ color:#261A1A;
 
 }
 
-@media (max-width: 550px) {
-  html {
-    font-size: 12px;
-  }
+@media (max-width: 650px) {
+  
   .food-icons {
-    width: 60%;
+    width: 45%;
   }
   .container {
     width: 100%;
-    padding: 1em;
-  }
+    padding: .5em;
+  }}
+  @media (max-width: 650px) {
+    html {
+      font-size: 8px;
+    }
+    .food-icons {
+      width: 25%;
+    }
 }
 @media (min-width: 1200px) {
   html {
     font-size: 26px;
   }}
+  

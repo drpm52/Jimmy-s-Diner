@@ -85,7 +85,7 @@ function updateInnerHTML() {
       item.cost
     }>remove</button>
         </div>
-        <h4 id="${item.name}-price">$${item.quantity * item.cost}</h4>
+        <h4 class = "price" id="${item.name}-price">$${item.quantity * item.cost}</h4>
         </div>`;
     items.innerHTML = str;
   });
