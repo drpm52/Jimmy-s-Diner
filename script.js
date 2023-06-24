@@ -60,8 +60,10 @@ const removeHidden = (e) => {
 };
 
 function reset() {
+  if (!thankYouMsg.classList.contains('hidden')){
   thankYouMsg.classList.add("hidden");
-}
+  cart =[]
+}}
 
 function totalCost(arr) {
   let totalCost = 0;
@@ -71,6 +73,7 @@ function totalCost(arr) {
 
   totalPrice.innerHTML = totalCostHTML;
 }
+// if thankyou message does not contain hidden  reset() && cart =[]
 
 function updateInnerHTML() {
   //
@@ -95,7 +98,9 @@ main.addEventListener("click", function (e) {
   const name = e.target.id;
   const cost = e.target.dataset.cost;
   const cartItem = cart.find((el) => el.name === name);
-  if (e.target.classList.contains("add")) {
+  reset()
+  
+  if (e.target.classList.contains("add") ) {
     removeHidden();
 
     if (!cartItem) {
