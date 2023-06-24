@@ -9,6 +9,7 @@ const yourOrder = document.querySelector(".your-order");
 const thankYouMsg = document.querySelector(".thanks");
 const items = document.querySelector(".items");
 const totalPrice = document.querySelector(".total-price");
+const paymentForm= document.getElementById('payment-form')
 let cart = [];
 let name1 = "";
 
@@ -63,6 +64,7 @@ function reset() {
   if (!thankYouMsg.classList.contains('hidden')){
   thankYouMsg.classList.add("hidden");
   cart =[]
+  paymentForm.reset()
 }}
 
 function totalCost(arr) {
