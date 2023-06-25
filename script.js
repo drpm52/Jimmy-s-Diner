@@ -54,7 +54,7 @@ function removeHandleClick(e) {
 }
 
 const removeHidden = (e) => {
-  // thankYouMsg.classList.add("hidden");
+ 
   yourOrder.classList.remove("hidden");
   completeOrder.classList.remove("hidden");
   totalPrice.classList.remove("hidden");
